@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Drive Car Showroom</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1600') center/cover;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 10px black;
+}
+
+.hero h2{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:24px;
+    margin:15px;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    background:red;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:darkred;
+}
+
+section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+section h2{
+    font-size:35px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.car-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.car-card{
+    width:320px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:.3s;
+}
+
+.car-card:hover{
+    transform:translateY(-8px);
+}
+
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car-card h3{
+    margin:15px 0;
+}
+
+.car-card p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.car-card button{
+    margin-bottom:20px;
+    padding:10px 20px;
+    background:#111;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.car-card button:hover{
+    background:red;
+}
+
+#services{
+    background:#fff;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.service{
+    background:#222;
+    color:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.service h3{
+    margin-bottom:10px;
+}
+
+.contact{
+    background:#111;
+    color:white;
+}
+
+.contact p{
+    font-size:20px;
+    margin:10px;
+}
+
+.contact button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    background:red;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:35px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🚗 Royal Drive Car Showroom</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#cars">Cars</a>
+<a href="#services">Services</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdfnQr3vExSq5hmCc0S51FzR3rS07LTAFMwZQH8ZAWhI5Dxvw/viewform?usp=publish-editor">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h2>Drive Your Dream Car</h2>
+<p>Luxury • Comfort • Performance</p>
+<button onclick="document.getElementById('cars').scrollIntoView({behavior:'smooth'})">
+Explore Cars
+</button>
+</section>
+
+<section id="about">
+<h2>About Royal Drive</h2>
+
+<p>
+Royal Drive Car Showroom is one of the leading automobile dealers offering
+luxury, sports, SUV and family cars. We provide genuine vehicles,
+easy finance, insurance support, exchange offers and excellent after-sales
+service. Our mission is to help every customer find their dream car at the
+best possible price.
+</p>
+
+</section>
+
+<section id="cars">
+
+<h2>Featured Cars</h2>
+
+<div class="car-container">
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600">
+<h3>BMW M4</h3>
+<p>Price: ₹95,00,000</p>
+<button>View Details</button>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600">
+<h3>Audi A6</h3>
+<p>Price: ₹72,00,000</p>
+<button>View Details</button>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=600">
+<h3>Mercedes-Benz C-Class</h3>
+<p>Price: ₹80,00,000</p>
+<button>View Details</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="service">
+<h3>🚘 New Cars</h3>
+<p>Latest premium cars from top brands.</p>
+</div>
+
+<div class="service">
+<h3>💰 Car Finance</h3>
+<p>Easy EMI and loan facilities.</p>
+</div>
+
+<div class="service">
+<h3>🛠 Service Center</h3>
+<p>Professional maintenance and repairs.</p>
+</div>
+
+<div class="service">
+<h3>🔄 Exchange</h3>
+<p>Best value for your old vehicle.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Srinagar, Jammu & Kashmir</p>
+<p>📞 +91 9876543210</p>
+<p>📧 royaldrive@gmail.com</p>
+
+<button onclick="alert('Thank you for visiting Royal Drive Car Showroom!')">
+Contact Now
+</button>
+
+</section>
+
+<footer>
+<p>© 2026 Royal Drive Car Showroom | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
